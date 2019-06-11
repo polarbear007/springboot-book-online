@@ -1,5 +1,8 @@
 package cn.itcast.service;
 
-public interface UserService {
+import cn.itcast.entity.User;
 
+public interface UserService {
+	User loginByUsernameOrEmailOrPhone(User user);
+	Integer registerUserByEmail(User user);
 }
